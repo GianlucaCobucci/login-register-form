@@ -36,23 +36,21 @@ body {
 .wrapper .form-box.login {
     left: 0;
     padding: 0 60px 0 40px;
-    /* display: none; */ 
 }
 
 .wrapper .form-box.login .animation {
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-    transition: .5s ease;
-    transition-delay: calc(.1s * var(--j));
-
+    transition: 0.3s ease;
+    transition-delay: calc(0.05s * var(--j));
 }
 
 .wrapper.active .form-box.login .animation {
     transform: translateX(-120%);
     opacity: 0;
     filter: blur(10px);
-    transition-delay: calc(.1s * var(--i));
+    transition-delay: calc(0.05s * var(--i));
 }
 
 .wrapper .form-box.register {
@@ -70,15 +68,15 @@ body {
     transform: translateX(120%);
     opacity: 0;
     filter: blur(10px);
-    transition: .5s ease;
-    transition-delay: calc(.1s * var(--j));
+    transition: 0.3s ease;
+    transition-delay: calc(0.05s * var(--j));
 } 
 
 .wrapper.active .form-box.register .animation {
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-    transition-delay: calc(.1s * var(--i));
+    transition-delay: calc(0.05s * var(--i));
 }
 
 .form-box h2 {
@@ -104,7 +102,7 @@ body {
     font-size: 16px;
     color: #fff;
     font-weight: 500;
-    transition: 0.5s;
+    transition: 0.3s;
     padding-right: 23px;
 }
 
@@ -121,7 +119,7 @@ body {
     font-size: 16px;
     color: #fff;
     pointer-events: none;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .input-box input:focus~label,
@@ -169,7 +167,7 @@ body {
     height: 300%;
     background: linear-gradient(#081b29, #0ef, #081b29,  #0ef); /* effetto sulla copertura verde acqua del bottone */
     z-index: -1;
-    transition: .5s;
+    transition: 0.3s;
 }
 
 .btn:hover:before {
@@ -204,7 +202,7 @@ body {
 }
 
 .wrapper .info-text.login {
-    right: 0; /* praticamente lo metto all'altra metà del wrapper: se era a sx, con 0 è a dx */
+    right: 0; /* praticamente lo metto all'altra metÃ  del wrapper: se era a sx, con 0 Ã¨ a dx */
     text-align: right;
     padding: 0 40px 60px 150px;
 }
@@ -213,15 +211,15 @@ body {
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-    transition: .5s ease;
-    transition-delay: calc(.1s * var(--j));
+    transition: 0.3s ease;
+    transition-delay: calc(0.05s * var(--j));
 }
 
 .wrapper.active .info-text.login .animation {
     transform: translateX(120%);
     opacity: 0;
     filter: blur(10px);
-    transition-delay: calc(.1s * var(--i));
+    transition-delay: calc(0.05s * var(--i));
 }
 
 .wrapper .info-text.register {
@@ -239,15 +237,15 @@ body {
     transform: translateX(-120%);
     opacity: 0;
     filter: blur(10px);
-    transition: .5s ease;
-    transition-delay: calc(.1s * var(--j));
+    transition: 0.3s ease;
+    transition-delay: calc(0.05s * var(--j));
 } 
 
 .wrapper.active .info-text.register .animation {
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-    transition-delay: calc(.1s * var(--i));
+    transition-delay: calc(0.05s * var(--i));
 } 
 
 .info-text h2 {
@@ -273,13 +271,12 @@ body {
     transform: rotate(10deg) skewY(40deg);
     transition: 1s ease;
     transform-origin: bottom right;
-    transition-delay: .5s;
-
+    transition-delay: 0.3s;
 }
 
 .wrapper.active .bg-animate {
     transform: rotate(0) skewY(0);
-    transition-delay: .5s;
+    transition-delay: 0.3s;
 }
 
 .wrapper .bg-animate2 {
@@ -292,7 +289,7 @@ body {
     border-top: 3px solid #0ef;
     transform: rotate(0) skewY(0);
     transform-origin: bottom left;
-    transition:  1.5s ease;
+    transition:  1s ease;
 }
 
 .wrapper.active .bg-animate2 {
